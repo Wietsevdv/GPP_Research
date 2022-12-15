@@ -6,6 +6,7 @@ GOAP is a decision making code structure. It revolves around the AI having a goa
 Each action has atleast 1 precondition and 1 effect. The AI uses these preconditions and effects to decide what action to take to accomplish its goal.
 
 Example:
+
 -Agent needs to move from room A to room B. The precondition for this action would be that there needs to be a way to get to room B(eg: door not locked).
 
 -Assuming the path is blocked, it cannot go to room B yet. So the agent needs to find an action that has the effect to clear the path(eg: unlock door).
