@@ -7,7 +7,9 @@ Each action has atleast 1 precondition and 1 effect. The AI uses these precondit
 
 Example:
 -Agent needs to move from room A to room B. The precondition for this action would be that there needs to be a way to get to room B(eg: door not locked).
+
 -Assuming the path is blocked, it cannot go to room B yet. So the agent needs to find an action that has the effect to clear the path(eg: unlock door).
+
 -Following the door example, the unlockDoorAction will have a precondition "HaveKey". The agent needs an action that has the effect "HaveKey = true;".
 
 It boils down to the AI having a goal it wants to make true and choosing performable actions who's effects result in the AI achieving its goal.
