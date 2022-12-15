@@ -13,6 +13,7 @@ Example:
 
 -Following the door example, the unlockDoorAction will have a precondition "HaveKey". The agent needs an action that has the effect "HaveKey = true;".
 
+
 It boils down to the AI having a goal it wants to make true and choosing performable actions who's effects result in the AI achieving its goal.
 
 This will definitly use a stack. As every action you finish, will make you want to return to the previous action you were trying to perform but needed to first meet its precondition(s).
