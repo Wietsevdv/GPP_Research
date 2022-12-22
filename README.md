@@ -17,3 +17,5 @@ Example:
 It boils down to the AI having a goal it wants to make true and choosing performable actions who's effects result in the AI achieving its goal.
 
 This will definitly use a stack. As every action you finish, will make you want to return to the previous action you were trying to perform but needed to first meet its precondition(s).
+
+Start by creating a world where you manually open the door to check these mechanics work. After that make the ai take over with goap
