@@ -19,3 +19,7 @@ It boils down to the AI having a goal it wants to make true and choosing perform
 This will definitly use a stack. As every action you finish, will make you want to return to the previous action you were trying to perform but needed to first meet its precondition(s).
 
 Start by creating a world where you manually open the door to check these mechanics work. After that make the ai take over with goap
+
+important note: GOAP needs a finite state machine to work. It removes the state transition logic, and makes the FSM much simpler.
+
+GOAP in code will be a "planner" that is giving a goal by the AI. The planner uses pathfinding on nodes that hold worldInfo with actions being the connections that change the worldInfo. The path the planner creates is the sequence of actions the AI can take to realize it's goal. Each action in this sequence changes worldinfo to the point the goal is met.
