@@ -15,6 +15,7 @@ Example:
 
 -Following the door example, the unlockDoorAction will have a precondition "HaveKey". The agent needs an action that has the effect "HaveKey = true;".
 
-
-
 GOAP in code will be a "planner" that is giving a goal by the AI. The planner uses pathfinding on nodes that hold worldInfo with actions being the connections that change the worldInfo. The path the planner creates is the sequence of actions the AI can take to realize it's goal. Each action in this sequence changes worldinfo to the point the goal is met.
+
+The image below shows what happens if I press on the right side of the "water" the planner knows through the actions preconditions that to go the other side the agent must first close the bridge by standing on button. This will satisfy the precondition of the action to go the other side.
+![image](https://user-images.githubusercontent.com/99739337/211895053-e39e6ffc-c7d3-4ade-a59b-9cf459859542.png)
